@@ -1,0 +1,2 @@
+rm -fR bin
+rm -fR dist
