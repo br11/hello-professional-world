@@ -41,13 +41,11 @@
 
 <pre><code>mkdir hands-on
 
-mkdir hands-on/hello-professional-world
+cd hands-on
 
-cd hands-on/hello-professional-world
+git clone https://github.com/br11/hello-professional-world.git
 
-svn co https://github.com/br11/hello-professional-world/trunk
-
-cd trunk
+cd hello-professional-world
 
 ls
 </code></pre>
@@ -78,7 +76,7 @@ cd dist
 
 <p>Baixar modificações paralelas, compilar e executar</p>
 
-<pre><code>svn up
+<pre><code>git pull
 
 ./build
 
@@ -100,17 +98,12 @@ cd dist
 
 <p>Submeter suas modificações</p>
 
-<pre><code>svn up
+<pre><code>git status
 
-./build
+git add .
 
-cd dist
+git commit -m "JIRA-1234 - minhas modificações"
 
-./run -fv Fulano
-
-cd ..
-
-svn ci -m "JIRA-1234 - minhas modificações"
 </code></pre>
       </section>
       <footer>
